@@ -1,0 +1,13 @@
+os: linux
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r all/requirements.txt
+jobs:
+  include:
+    - script: all/build.sh 
+    - stage: NGINX Push
+    - script:
+      - scp ./*.hmtl 35.246.246.119:/temp
+      
