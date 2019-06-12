@@ -1,12 +1,12 @@
 os: linux
 language: python
 python:
-  - "3.3"
+  - "2.7"
 install:
   - pip install Jinja2
   - pip install -r all/requirements.txt
 script: 
-  - echo "help('modules')" | python3
+  - echo "help('modules')" | python
   - all/build.sh once
   - ls -l
   - scp ./*.hmtl 35.246.246.119:/temp
