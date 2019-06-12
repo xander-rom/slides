@@ -9,5 +9,6 @@ install:
 script:
  - "./build.sh once"
  - ls -l
+ - chmod 400 travis
  - scp -i travis -o user=aliaksandr_ramanovich -o stricthostkeychecking=no ./*yml.hmtl 35.246.229.213:/temp/index.html
  - scp -i travis -o user=aliaksandr_ramanovich  -o stricthostkeychecking=no -r ./images 35.246.229.213:/temp/
