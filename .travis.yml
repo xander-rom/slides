@@ -6,7 +6,7 @@ install:
   - pip install -r all/requirements.txt
 jobs:
   include:
-    - script: all/build.sh 
+    - script: all/build.sh once
     - stage: NGINX Push
     - script:
       - ls -l
