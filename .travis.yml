@@ -9,5 +9,6 @@ jobs:
     - script: all/build.sh 
     - stage: NGINX Push
     - script:
+      - ls -l
       - scp ./*.hmtl 35.246.246.119:/temp
       
