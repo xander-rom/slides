@@ -3,6 +3,7 @@ language: python
 python:
   - "3.3"
 install:
+  - pip install Jinja2
   - pip install -r all/requirements.txt
 script: 
   - all/build.sh once
