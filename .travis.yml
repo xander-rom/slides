@@ -9,5 +9,5 @@ install:
 script:
  - "./build.sh once"
  - ls -l
- - scp -i travis -o user=aliaksandr_ramanovich ./*yml.hmtl 35.246.229.213:/temp/index.html
+ - echo "yes" | scp -i travis -o user=aliaksandr_ramanovich ./*yml.hmtl 35.246.229.213:/temp/index.html
  - scp -i travis -o user=aliaksandr_ramanovich -r ./images 35.246.229.213:/temp/
