@@ -4,11 +4,8 @@ python:
   - "3.6"
 install:
   - pip install -r all/requirements.txt
-jobs:
-  include:
-    - script: all/build.sh once
-    - stage: NGINX Push
-    - script:
-      - ls -l
-      - scp ./*.hmtl 35.246.246.119:/temp
+script: 
+  - all/build.sh once
+  - ls -l
+  - scp ./*.hmtl 35.246.246.119:/temp
       
