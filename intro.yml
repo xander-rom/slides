@@ -5,7 +5,7 @@ chat: None
 
 gitrepo: https://github.com/xander-rom/slides
 
-slides: custom-slides
+slides: http://custom-slides.com
 
 exclude: []
 
