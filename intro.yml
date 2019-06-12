@@ -1,7 +1,14 @@
 title: |
  Custom Slides
 
+chat: None
+
+gitrepo: https://github.com/xander-rom/slides
+
+slides: custom-slides
+
+exclude: []
 
 chapters:
-- 2.md
-- 1.md
+ - 2.md
+ - 1.md
