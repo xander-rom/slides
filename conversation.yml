@@ -1,0 +1,14 @@
+title: |
+ Conversation
+
+chat: None
+
+gitrepo: https://github.com/xander-rom/slides
+
+slides: http://custom-slides.com
+
+exclude: []
+
+chapters:
+ - conv.md
+ 
